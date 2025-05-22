@@ -1,7 +1,7 @@
 Title: Save and Load BumpyMatrices to/from file
 Package: alabaster.bumpy
-Version: 1.8.0
-Date: 2024-01-01
+Version: 1.8.1
+Date: 2025-05-22
 Authors@R: person("Aaron", "Lun", role=c("cre", "aut"), email="infinite.monkeys.with.keyboards@gmail.com")
 Description: 
     Save BumpyMatrix objects into file artifacts, and load them back into memory.

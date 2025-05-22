@@ -35,7 +35,7 @@
 readBumpyDataFrameMatrix <- function(path, metadata, ...) {
     concatenated <- altReadObject(file.path(path, "concatenated"), ...)
 
-    fhandle <- H5Fopen(file.path(path, "partitions.h5"))
+    fhandle <- H5Fopen(file.path(path, "partitions.h5"), "H5F_ACC_RDONLY")
     on.exit(H5Fclose(fhandle), add=TRUE, after=FALSE)
     ghandle <- H5Gopen(fhandle, "bumpy_data_frame_array")
     on.exit(H5Gclose(ghandle), add=TRUE, after=FALSE)
